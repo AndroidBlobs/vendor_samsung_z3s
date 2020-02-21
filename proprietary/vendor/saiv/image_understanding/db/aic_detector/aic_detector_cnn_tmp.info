@@ -1,0 +1,8 @@
+{
+	"version_id": "v5",
+	"tag" : "5.22",
+	"model_type" : "npu",
+	"precision" : "qasymm8",
+	"complier" : "eden1.4.3.b",
+	"model_path" : "/vendor/saiv/image_understanding/db/aic_detector/aic_detector_cnn.tflite"
+}

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<libs lib_count="23">
+  <kernels>
+    <lib kernel_count="1" name="libcalc_hist_gc.so" target="DSP">
+      <kernel exe="calc_hist" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="17" name="libdata_manipulate_gc.so" target="DMA">
+      <kernel exe="deinterleave_2" id="0" post="" pre="" />
+      <kernel exe="deinterleave_3" id="1" post="" pre="" />
+      <kernel exe="interleave_2" id="2" post="" pre="" />
+      <kernel exe="interleave_3" id="3" post="" pre="" />
+      <kernel exe="down_scale" id="4" post="" pre="" />
+      <kernel exe="rotate" id="5" post="" pre="" />
+      <kernel exe="flip" id="6" post="" pre="" />
+      <kernel exe="transpose" id="7" post="" pre="" />
+      <kernel exe="data_down_convert" id="8" post="" pre="" />
+      <kernel exe="data_up_convert" id="9" post="" pre="" />
+      <kernel exe="min" id="10" post="" pre="" />
+      <kernel exe="max" id="11" post="" pre="" />
+      <kernel exe="sum" id="12" post="" pre="" />
+      <kernel exe="square_sum" id="13" post="" pre="" />
+      <kernel exe="average" id="14" post="" pre="" />
+      <kernel exe="quantize" id="15" post="" pre="" />
+      <kernel exe="dequantize" id="16" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libgaussian3x3_gc.so" target="DSP">
+      <kernel exe="gaussian3x3" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="4" name="libnn_sdma_gc.so" target="DSP">
+      <kernel exe="Slice" id="0" post="" pre="" />
+      <kernel exe="Permute" id="1" post="" pre="" />
+      <kernel exe="Reshape" id="2" post="" pre="" />
+      <kernel exe="Flatten" id="3" post="" pre="" />
+    </lib>
+    <lib kernel_count="2" name="libtile_loop_gc.so" target="DSP">
+      <kernel exe="tile_loop_sub" id="0" post="" pre="" />
+      <kernel exe="tile_loop" id="1" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libdefault_desc_gc.so" target="DSP">
+      <kernel exe="copy_kernel" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libenf_y_gc.so" target="DSP">
+      <kernel exe="enf_y" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libhough_line_accum_gc.so" target="DSP">
+      <kernel exe="hough_line_accum" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libsobel3x3_gc.so" target="DSP">
+      <kernel exe="sobel3x3" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="4" name="libcti_list_and_padding_gc.so" target="DSP">
+      <kernel exe="cti_list_and_padding_custom" id="0" post="" pre="" />
+      <kernel exe="cti_list_and_padding_replicate" id="1" post="" pre="" />
+      <kernel exe="cti_list_and_padding_mirror" id="2" post="" pre="" />
+      <kernel exe="cti_list_and_padding_mirror101" id="3" post="" pre="" />
+    </lib>
+    <lib kernel_count="12" name="libsdma_veri_gc.so" target="DSP">
+      <kernel exe="dummy_1p" id="0" post="" pre="" />
+      <kernel exe="dummy_2p" id="1" post="" pre="" />
+      <kernel exe="dummy_3p" id="2" post="" pre="" />
+      <kernel exe="dummy_yuv422uv" id="3" post="" pre="" />
+      <kernel exe="dummy_yuv420uv" id="4" post="" pre="" />
+      <kernel exe="dummy_yuv422" id="5" post="" pre="" />
+      <kernel exe="dummy_yuv420" id="6" post="" pre="" />
+      <kernel exe="dummy_io_1p" id="7" post="" pre="" />
+      <kernel exe="dummy_io_2p" id="8" post="" pre="" />
+      <kernel exe="dummy_io_3p" id="9" post="" pre="" />
+      <kernel exe="dummy_io_yuv422uv" id="10" post="" pre="" />
+      <kernel exe="dummy_io_yuv420uv" id="11" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libgradient_gc.so" target="DSP">
+      <kernel exe="gradient" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="2" name="libcti_list_ctrlr_gc.so" target="DSP">
+      <kernel exe="cti_list_ctrlr_in" id="0" post="" pre="" />
+      <kernel exe="cti_list_ctrlr_out" id="1" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libunpackBayer13_gc.so" target="DSP">
+      <kernel exe="unpackbayer13" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libtile_iter_gc.so" target="DSP">
+      <kernel exe="tile_iter" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="2" name="libMFB_gc.so" target="DSP">
+      <kernel exe="BLEND_tb" id="0" post="" pre="" />
+      <kernel exe="BLEND_MOTMULT_tb" id="1" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="liblog_gc.so" target="DSP">
+      <kernel exe="ivp_log" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libpbs_sad_gc.so" target="DSP">
+      <kernel exe="pbs_sad" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libcopy_image_gc.so" target="CPU">
+      <kernel exe="copy_image" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libtranspose_u8_gc.so" target="DSP">
+      <kernel exe="transpose_u8" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libenf_uv_gc.so" target="DSP">
+      <kernel exe="enf_uv" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libenf_gc.so" target="DSP">
+      <kernel exe="enf" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="12" name="libnn_gc.so" target="DSP">
+      <kernel exe="Convolution" id="0" post="" pre="nn_ifm_preproc" />
+      <kernel exe="DwConvolution" id="1" post="" pre="" />
+      <kernel exe="Deconvolution" id="2" post="" pre="" />
+      <kernel exe="Pooling" id="3" post="" pre="" />
+      <kernel exe="Concat" id="4" post="" pre="" />
+      <kernel exe="FullyConnected" id="5" post="" pre="" />
+      <kernel exe="Eltwise" id="6" post="" pre="" />
+      <kernel exe="SoftMax" id="7" post="" pre="" />
+      <kernel exe="DetectionOutput" id="8" post="" pre="" />
+      <kernel exe="DwdeConvolution" id="9" post="" pre="" />
+      <kernel exe="Threeconv" id="10" post="" pre="" />
+      <kernel exe="Poolconv" id="11" post="" pre="" />
+    </lib>
+  </kernels>
+</libs>

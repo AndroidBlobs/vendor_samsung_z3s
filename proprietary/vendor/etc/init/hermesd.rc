@@ -1,0 +1,11 @@
+service hermesd /vendor/bin/hermesd /data/vendor/gatekeeper
+    class hal
+    user system
+    socket hermes_secnvm stream 660 system system
+    group system
+
+on early-fs
+    chown system system /dev/k250a
+    chmod 0660 /dev/k250a
+    chown system system /dev/ssp
+    chmod 0660 /dev/ssp

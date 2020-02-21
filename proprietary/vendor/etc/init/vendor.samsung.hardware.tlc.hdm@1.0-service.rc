@@ -1,0 +1,7 @@
+service hdmtlc-hal-service /vendor/bin/hw/vendor.samsung.hardware.tlc.hdm@1.0-service
+    interface vendor.samsung.hardware.tlc.hdm@1.0::ISehHdm default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled

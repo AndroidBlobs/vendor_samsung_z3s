@@ -1,0 +1,5 @@
+service slsi-geo-trans /vendor/bin/hw/vendor.samsung_slsi.hardware.geoTransService@1.0-service
+    class hal
+    user cameraserver
+    group media shell system drmrpc
+    ioprio rt 4
